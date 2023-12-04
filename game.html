@@ -13,9 +13,18 @@
             return ordlist[ordindex]
         }
 
-        let move = getComputerChoice()
+        let move = getComputerChoice();
 
-        console.log(move);
+        function playerSerlection() {
+            let playerChoice = prompt("Rock, Paper or Scissors? ");
+            if (playerChoice == ("Rock"||"Paper"||"Scissors")) {
+                return playerChoice;
+            }
+        }
+
+        let player = playerSerlection();
+
+        console.log(player);
     </script>
 </body>
 </html>
