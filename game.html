@@ -31,6 +31,14 @@
             console.log('You did it!');
         } else if (player == 'PAPER' && computerChoice == 'ROCK') {
             console.log('You did it!');
+        } else if (player == 'ROCK' && computerChoice == 'PAPER') {
+            console.log('You lose!');
+        } else if (player == 'SCISSORS' && computerChoice == 'ROCK') {
+            console.log('You lose!');
+        } else if (player == 'PAPER' && computerChoice == 'SCISSORS') {
+            console.log('You lose!');
+        } else if (player == computerChoice){
+            console.log("It's a draw!");
         }
     </script>
 </body>
