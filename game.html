@@ -23,8 +23,14 @@
             console.log('Not an option');
         }
 
-        if (playerSelection) {
-            
+        let player = playerSelection.toUpperCase()
+
+        if (player == 'ROCK' && computerChoice == 'SCISSORS') {
+            console.log('You did it!');
+        } else if (player == 'SCISSORS' && computerChoice == 'PAPER') {
+            console.log('You did it!');
+        } else if (player == 'PAPER' && computerChoice == 'ROCK') {
+            console.log('You did it!');
         }
     </script>
 </body>
