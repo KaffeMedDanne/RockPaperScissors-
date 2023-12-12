@@ -8,6 +8,9 @@
 <body>
     <script>
 
+        let playerScore = 0
+        let computerScore = 0
+
         let computerChoice = getComputerChoice()
         
         function getComputerChoice() {
@@ -26,20 +29,28 @@
         let player = playerSelection.toUpperCase()
 
         if (player == 'ROCK' && computerChoice == 'SCISSORS') {
+            playerScore = (playerScore + 1)
             console.log('Rock beats Scissors, you win!');
         } else if (player == 'SCISSORS' && computerChoice == 'PAPER') {
+            playerScore = (playerScore + 1)
             console.log('Scissors beats Paper, you win!');
         } else if (player == 'PAPER' && computerChoice == 'ROCK') {
+            playerScore = (playerScore + 1)
             console.log('Paper beats Rock, you win!');
         } else if (player == 'ROCK' && computerChoice == 'PAPER') {
+            computerScore = (computerScore + 1)
             console.log('Paper beats Rock, you lose!');
         } else if (player == 'SCISSORS' && computerChoice == 'ROCK') {
+            computerScore = (computerScore + 1)
             console.log('Rock beats Scissors, you lose!');
         } else if (player == 'PAPER' && computerChoice == 'SCISSORS') {
+            computerScore = (computerScore + 1)
             console.log('Scissors beats Paper, you lose!');
         } else if (player == computerChoice){
             console.log("It's a draw!");
         }
+
+        console.log(playerScore, computerScore);
     </script>
 </body>
 </html>
