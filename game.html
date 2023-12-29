@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.ccs">
 </head>
 <body>
+
+    <h1>Rock, Paper or Scissors?</h1>
+    <div id="container">
+        <input id="display" readonly>
+        <div id="moves">
+            <button onclick="appendToDisplay('Rock')"><img src="" alt=""></button>
+            <button onclick="appendToDisplay('Paper')"><img src="" alt=""></button>
+            <button onclick="appendToDisplay('Scissors')"><img src="" alt=""></button>
+        </div>
+        <div id="resetGame">
+            <button onclick="appendToDisplay('Retry')" class="operator-btn">Retry!</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
