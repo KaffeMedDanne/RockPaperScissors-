@@ -3,19 +3,39 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    
     background-color: aliceblue;
 }
 
 #container {
     background-color: rgb(111, 174, 230);
-    padding: 2rem;
+    padding: 10px;
     border-radius: 1rem;
+    
+}
+
+#display {
+    width: 600px;
+    height: 200px;
 }
 
 .scores {
     display: flex;
     justify-content: space-between;
+}
+
+button {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.operator-btn {
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
 }
 
 #moves {
@@ -27,4 +47,10 @@ body {
 #resetGame {
     display: flex;
     justify-content: center;
+}
+
+.rock {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 75px;
 }
