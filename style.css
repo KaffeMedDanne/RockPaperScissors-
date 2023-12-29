@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: aliceblue;
+}
+
+#container {
+    background-color: rgb(111, 174, 230);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-between;
+}
+
+#moves {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#resetGame {
+    display: flex;
+    justify-content: center;
+}
