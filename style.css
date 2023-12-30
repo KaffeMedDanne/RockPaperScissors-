@@ -49,8 +49,8 @@ button {
     justify-content: center;
 }
 
-.rock {
-    max-width: 150px;
-    max-height: 150px;
+.image {
+    width: 150px;
+    height: 150px;
     border-radius: 75px;
 }

@@ -11,14 +11,13 @@
     <h1>Rock, Paper or Scissors?</h1>
     <div id="container">
         <div class="scores">
-            <p>Your Scoore</p>
-            <p>My Scoore</p>
+            <div id="playerScores">Your score </div>
         </div>
         <input id="display" readonly>
         <div id="moves">
-            <button onclick="appendToDisplay('Rock')"><img src="rock.jpg" class="rock"></button>
-            <button onclick="appendToDisplay('Paper')"></button>
-            <button onclick="appendToDisplay('Scissors')"></button>
+            <button onclick="appendToDisplay('Rock')"><img src="rock.jpg" class="image"></button>
+            <button onclick="appendToDisplay('Paper')"><img src="paper.jpg" class="image"></button>
+            <button onclick="appendToDisplay('Scissors')"><img src="sax.jpg" class="image"></button>
         </div>
         <div id="resetGame">
             <button onclick="appendToDisplay('Retry')" class="operator-btn">Retry!</button>
