@@ -15,14 +15,14 @@
         </div>
         <input id="display" readonly>
         <div id="moves">
-            <button onclick="appendToDisplay('Rock')"><img src="rock.jpg" class="image"></button>
-            <button onclick="appendToDisplay('Paper')"><img src="paper.jpg" class="image"></button>
-            <button onclick="appendToDisplay('Scissors')"><img src="sax.jpg" class="image"></button>
+            <button value="Rock" onclick="displayResult('Rock')" class="buttons" id="btn1"><img src="rock.jpg" class="image"></button>
+            <button value="Paper" onclick="displayResult('Paper')" class="buttons" id="btn2"><img src="paper.jpg" class="image"></button>
+            <button value="Scissors" onclick="displayResult('Scissors')" class="buttons" id="btn3"><img src="sax.jpg" class="image"></button>
         </div>
         <div id="resetGame">
-            <button onclick="appendToDisplay('Retry')" class="operator-btn">Retry!</button>
+            <button onclick="RetryGame('Retry')" class="operator-btn">Retry!</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="scripttest.js"></script>
 </body>
 </html>
