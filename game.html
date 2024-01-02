@@ -15,10 +15,15 @@
         </div>
         <input id="display" readonly>
         <div id="moves">
-            <button value="Rock" onclick="displayResult('Rock')" class="buttons" id="btn1"><img src="rock.jpg" class="image"></button>
-            <button value="Paper" onclick="displayResult('Paper')" class="buttons" id="btn2"><img src="paper.jpg" class="image"></button>
-            <button value="Scissors" onclick="displayResult('Scissors')" class="buttons" id="btn3"><img src="sax.jpg" class="image"></button>
+            <button value="Rock" onclick="playGame('Rock')" class="buttons" id="btn1"><img src="rock.jpg" class="image"></button>
+            <button value="Paper" onclick="playGame('Paper')" class="buttons" id="btn2"><img src="paper.jpg" class="image"></button>
+            <button value="Scissors" onclick="playGame('Scissors')" class="buttons" id="btn3"><img src="sax.jpg" class="image"></button>
         </div>
+
+        <div id="playerDisplay">Player: </div>
+        <div id="ComputerDisplay">Player: </div>
+        <div id="resultsDisplay">Player: </div>
+
         <div id="resetGame">
             <button onclick="RetryGame('Retry')" class="operator-btn">Retry!</button>
         </div>

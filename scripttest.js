@@ -1,34 +1,20 @@
-const display = document.getElementById('display')
+wordlist = ['Rock', 'Paper', 'Scissors'];
 
-var round = 0
-var playerScore = 0
-var computerScore = 0
+let playerScore = 0
+let computerScore = 0
+let round = 0
 
-let playerSelection = null
+let playerDisplay = document.getElementById('playerDisplay');
+let compuerDisplay = document.getElementById('computerDisplay');
+let resultDisplay = document.getElementById('resultDisplay');
 
+function playGame(playerSelection) {
 
+    // while (playerScore + computerScore < 5){
 
-while (playerScore + computerScore < 5) {
-
-    function displayResult(value) {
-        choise = value
-        return choise
-    }
-
-    let playerSelection = choise
-
-    function getComputerChoice() {
-        wordlist = ['Rock', 'Paper', 'Scissors'];
-        wordindex = Math.floor(Math.random()* 3);
-        return wordlist[wordindex]
-    }
-
-    let computerChoice = getComputerChoice()
-
-    // function displayResult(input) {
-    //    display.value += input;
-    // }
-    
+    const computerChoice = wordlist[Math.floor(Math.random()* 3)];
+    let choise = ""
+        
     if (playerSelection == 'Rock' && computerChoice == 'Scissors') {
         playerScore = (playerScore + 1)
         console.log('Rock beats Scissors, you win!');
@@ -50,6 +36,7 @@ while (playerScore + computerScore < 5) {
     } else if (playerSelection == computerChoice){
         console.log("It's a draw!");
     }
+
 }
 
 function RetryGame() {
