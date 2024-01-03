@@ -1,8 +1,8 @@
 wordlist = ['Rock', 'Paper', 'Scissors'];
 
-let playerScore = 0
-let computerScore = 0
-let round = 0
+//let playerScore = 0
+//let computerScore = 0
+//let round = 0
 
 let playerDisplay = document.getElementById('playerDisplay');
 let computerDisplay = document.getElementById('computerDisplay');
