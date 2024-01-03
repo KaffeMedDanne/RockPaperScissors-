@@ -5,39 +5,37 @@ let computerScore = 0
 let round = 0
 
 let playerDisplay = document.getElementById('playerDisplay');
-let compuerDisplay = document.getElementById('computerDisplay');
+let computerDisplay = document.getElementById('computerDisplay');
 let resultDisplay = document.getElementById('resultDisplay');
+
 
 function playGame(playerSelection) {
 
-    // while (playerScore + computerScore < 5){
-
     const computerChoice = wordlist[Math.floor(Math.random()* 3)];
-    let choise = ""
+    let result = ""
         
-    if (playerSelection == 'Rock' && computerChoice == 'Scissors') {
-        playerScore = (playerScore + 1)
-        console.log('Rock beats Scissors, you win!');
-    } else if (playerSelection == 'Scissors' && computerChoice == 'Paper') {
-        playerScore = (playerScore + 1)
-        console.log('Scissors beats Paper, you win!');
-    } else if (playerSelection == 'Paper' && computerChoice == 'Rock') {
-        playerScore = (playerScore + 1)
-        console.log('Paper beats Rock, you win!');
-    } else if (playerSelection == 'Rock' && computerChoice == 'Paper') {
-        computerScore = (computerScore + 1)
-        console.log('Paper beats Rock, you lose!');
-    } else if (playerSelection == 'Scissors' && computerChoice == 'Rock') {
-        computerScore = (computerScore + 1)
-        console.log('Rock beats Scissors, you lose!');
-    } else if (playerSelection == 'Paper' && computerChoice == 'Scissors') {
-        computerScore = (computerScore + 1)
-        console.log('Scissors beats Paper, you lose!');
-    } else if (playerSelection == computerChoice){
-        console.log("It's a draw!");
+    if (playerSelection === computerChoice) {
+        result = "It's a draw!";
+
+    } else {
+        switch (playerSelection) {
+            case 'Rock':
+                result = (computerChoice === 'Scissors') ? 'You win!' : 'You lose!';
+                break;
+            case 'Paper':
+                result = (computerChoice === 'Rock') ? 'You win!' : 'You lose!';
+                break;
+            case 'Scissors':
+                result = (computerChoice === 'paper') ? 'You win!' : 'You lose!';
+                break;
+        }
     }
 
+    playerDisplay.textContent = ${playerSelection};
+    computerDisplay.textContent = ${computerChoice};
+    resultDisplay.textContent = result;
 }
+
 
 function RetryGame() {
     round = round * 0
